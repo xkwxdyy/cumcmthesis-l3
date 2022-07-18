@@ -1,0 +1,33 @@
+\documentclass{cumcmdoc}
+\usepackage{xeCJKfntef, xpinyin}
+\usepackage{graphicx}
+\usepackage{tabularray}
+\title{\textcolor{MaterialIndigo800}{%
+  \textbf{cumcmthesis: \href{http://www.mcm.edu.cn}{全国大学生数学建模竞赛} \LaTeX \xpinyin[font=\sffamily,format=\color{MaterialIndigo800}]{模}{mu2}板}}}
+\author{郭李军}
+\date{2022/07/15\quad v0.1.1%
+  \thanks{%
+    \url{https://github.com/ljguo1020/cumcmthesis-l3}
+  }
+}
+\begin{document}
+\maketitle
+\vskip 1cm%
+\begin{center}
+  \includegraphics[width = 0.45\textwidth]{cumcm-logo.png}
+\end{center}
+\newpage
+\section{介绍}
+本模板为\textbf{全国大学生数学建模竞赛}\LaTeX{}论文（非官方）模板，旨在帮助建模选手能够摆脱 word 的烦恼，更加轻松的编写论文.
+\subsection{安装及使用}
+只需要将 \cls{cumcmthesis.cls} 放在您的工作文件夹内，然后在新建文件 \cls{mian.tex} 写下如下内容：
+\begin{latexcode}[deletetexcs={\documentclass},
+  moretexcs={\chapter},morekeywords={\documentclass},
+  emph={[2]document}]
+  % main.tex
+  \documentclass{cumcmthesis}
+  \begin{document}
+    \hello \LaTeX{}!
+  \end{document}
+\end{latexcode}
+\end{document}
